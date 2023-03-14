@@ -12,7 +12,8 @@
 			xhr.onreadystatechange = function() {
 				if (xhr.readyState === 4 && xhr.status === 200) {
 					// show the success message if the form submission was successful
-					successMessage.style.display = 'block';
+					console.log(4);
+					document.append('<div>Sikerült</div>')
 				}
 			};
 			xhr.send(new FormData(form));
