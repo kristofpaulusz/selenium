@@ -13,7 +13,7 @@
 				if (xhr.readyState === 4 && xhr.status === 200) {
 					// show the success message if the form submission was successful
 					console.log(4);
-					document.append('<div>Sikerült</div>')
+					document.html('<div class="sik">Sikerült</div>')
 				}
 			};
 			xhr.send(new FormData(form));
