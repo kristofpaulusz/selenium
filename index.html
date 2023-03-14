@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szállítási Cím</title>
+</head>
+<body>
+    <form class=${this.#cimtipus} action="">
+        <label for="iranyitoszam">Irányítószám:</label><br>
+        <input type="text" id="iranyitoszam" name="iranyitoszam" required pattern="^\d{4}$" title="Iránytószám" value=""><br>
+        <label for="varos">Város:</label><br>
+        <input type="text" id="varos" name="varos" value="Nagy kezdőbetű"><br><br>
+        <label for="kozterulet_neve">Közterület neve:</label><br>
+        <input type="text" id="kozterulet_neve" name="kozterulet_neve" value=""><br>
+        <label for="kozterulet_jellege">Közterület jellege:</label><br>
+        <input type="text" id="kozterulet_jellege" name="kozterulet_jellege" value=""><br>
+        <label for="hely_hazszam">Helyrajzi/házszám szám:</label><br>
+        <input type="text" id="hely_hazszam" name="hely_hazszam" value=""><br>
+        <p>Válaszd ki:</p>
+        <label for="hrsz">Helyrajzi szám:</label><br>
+        <input type="radio" id="hrsz" name="hely_haz_jelleg" value="hrsz"><br>
+        <label for="hsz">Házszám:</label><br>
+        <input type="radio" id="hsz" name="hely_haz_jelleg" value="hsz"><br>
+        <input type="submit" value="Frissít">
+        </form>
+</body>
+</html>
